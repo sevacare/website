@@ -6,13 +6,13 @@ import PropTypes from "prop-types";
 const NewsCard = ({ image, title, text }) => (
   <S.NewsCardContainer>
     <S.NewsCardImage>
-      <img src={image} alt={`${title} image`} /> {/* Updated alt attribute */}
+      <img src={image} alt={`${title} image`} />
     </S.NewsCardImage>
     <S.NewsTextContainer>
       <S.NewsCardTitle>{title}</S.NewsCardTitle>
       <S.NewsCardDescription>{text}</S.NewsCardDescription>
       <S.ReadMoreLink>
-        <S.LinkText>Read more </S.LinkText>
+        <S.LinkText>Read more</S.LinkText>
         <S.LinkArrow src={right_arrow} />
       </S.ReadMoreLink>
     </S.NewsTextContainer>
