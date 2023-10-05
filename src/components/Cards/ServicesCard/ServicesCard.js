@@ -13,7 +13,7 @@ const ServicesCard = ({ image, title, text }) => (
 );
 
 ServicesCard.propTypes = {
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired, // Updated prop type to string
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };

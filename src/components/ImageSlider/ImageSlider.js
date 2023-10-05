@@ -15,9 +15,10 @@ const ImageSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    nextArrow: <img src={right_arrow} />,
-    prevArrow: <img src={left_arrow} />,
+    nextArrow: <img src={right_arrow} alt="Next Slide" />, // Add alt attribute
+    prevArrow: <img src={left_arrow} alt="Previous Slide" />, // Add alt attribute
   };
+
   return (
     <S.Container>
       <Slider {...settings}>
