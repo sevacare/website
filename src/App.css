@@ -1,0 +1,307 @@
+*{
+  --Gray: #777F98;
+  --White: #FFFFFF;
+  --Light-blue: #3EE9E5;
+  --Dark-blue: #093F68;
+  --Very-dark-blue: #080C20;
+  --Error: #FF2965;
+  font-family: 'Manrope', sans-serif;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--Very-dark-blue);
+  max-width: 400px;
+}
+.logo{
+  margin: 50px 0;
+}
+.heromobile{
+  width: 120%;
+}
+.hero-imgs{
+  display: none;
+}
+.App-header{
+  margin: 0 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tittle{
+  text-align: center;
+  color: var(--White);
+  font-size: 1.5rem;
+}
+.tittle span{
+  color: var(--Light-blue);
+}
+.tittle h2{
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--Gray);
+  font-weight: 300;
+}
+.mouse{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.content{
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.illustration-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.illustration-img{
+  width: 80px;
+  height: 80px;
+  background: var(--Dark-blue);
+  padding: 50px;
+  border-radius: 60px;
+}
+.illustration{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.illustration h4{
+  margin: 20px 0;
+  color: var(--White);
+  font-size: 1.5rem;
+}
+.illustration h5{
+  color: var(--Gray);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.pricing{
+  margin-top: 100px;
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.paragraph{
+  text-align: center;
+  color: var(--Gray);
+  line-height: 30px;
+}
+.dip-card{
+  position: relative;
+  background: var(--Dark-blue);
+  margin-top: 50px;
+  padding: 20px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+}
+.square{
+  position: absolute;
+  top: -20px;
+}
+.dip{
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.free{
+  color: var(--White);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.start{
+  color: var(--Gray);
+  line-height: 30px;
+}
+.checks{
+  color: var(--White);
+}
+.check-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.check{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(92%) saturate(3318%) hue-rotate(138deg) brightness(93%) contrast(96%);
+}
+.dive-card{
+  position: relative;
+  background: var(--Light-blue);
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+.paid{
+  position: absolute;
+  top: -30px;
+}
+.dive{
+  margin-top: 50px;
+  color: var(--Very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price{
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.price span{
+  font-size: 16px;
+  align-self: center;
+  font-weight: 300;
+}
+.App-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/bg-footer-squiggle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.notify{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--White);
+  margin-bottom: 50px;
+}
+.App-footer input{
+  outline: none;
+  width: 350px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 1px transparent;
+  background-color: var(--Dark-blue);
+  color: var(--Gray);
+  font-weight: 700;
+  text-indent: 20px;
+}
+.App-footer input:focus{
+  border-color: var(--Light-blue);
+}
+.submit-btn{
+  background-color: var(--Light-blue);
+  border: solid 1px var(--Light-blue);
+  width: 360px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 30px 0;
+  transition: .3s;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.submit-btn:hover{
+  background-color: transparent;
+  color: var(--White);
+}
+
+/* ---------------------------------- MEDIUM ------------------------------------ */
+@media screen and (min-width: 768px) {
+  body{
+    max-width: 768px;
+  }
+  .App-header{
+    position: relative;
+    margin-bottom: 200px;
+  }
+  .heromobile{
+    display: none;
+  }
+  .hero-imgs{
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+  }
+  .logo{
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  .tittle{
+    position: absolute;
+    top: 200px;
+    width: 80%;
+  }
+  .illustration-card{
+    justify-content: flex-start;
+  }
+  .illustration{
+    flex-direction: row;
+    width: 80%;
+    gap: 50px;
+  }
+  .passions, .lifestyle{
+    margin-left: 100px;
+  }
+  .dive-card, .dip-card{
+    max-width: 70%;
+    margin: 100px auto;
+  }
+  .App-footer{
+    padding-bottom: 100px;
+  }
+  .App-footer input{
+    width: 350px;
+  }
+  .submit-btn{
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+  }
+}
+/* -------------------------------------- DESKTOP -----------------------------------  */
+@media screen and (min-width: 1281px) {
+  body{
+    max-width: 1440px;
+  }
+  .App-header{
+    overflow: hidden;
+  }
+  .hero-imgs{
+    gap: 100px; 
+  }
+  .tittle{
+    max-width: 50%;
+  }
+  .illustration-card{
+    flex-direction: row;
+  }
+  .illustration{
+    flex-direction: column;
+  }
+  .freedom, .anywhere{
+    margin-top: 150px;
+  }
+  .passions, .lifestyle{
+    margin: 0;
+  }
+  .blue-cards{
+    max-width: 90%;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+  }
+  .dive-card{
+    height: 550px;
+  }
+  .dip-card{
+    height: 400px;
+  }
+}
