@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const ServicesCard = ({ image, title, text }) => (
   <S.ServicesCardContainer>
     <S.ServicesCardImage>
-      <img src={image} alt="Card image" />
+      <img src={image} alt={`${title} card`} /> {/* Updated alt attribute */}
     </S.ServicesCardImage>
     <S.ServicesCardTitle>{title}</S.ServicesCardTitle>
     <S.ServicesCardDescription>{text}</S.ServicesCardDescription>
@@ -13,7 +13,7 @@ const ServicesCard = ({ image, title, text }) => (
 );
 
 ServicesCard.propTypes = {
-  image: PropTypes.string.isRequired, // Updated prop type to string
+  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };

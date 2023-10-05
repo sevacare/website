@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const NewsCard = ({ image, title, text }) => (
   <S.NewsCardContainer>
     <S.NewsCardImage>
-      <img src={image} alt="Card image" />
+      <img src={image} alt={`${title} image`} /> {/* Updated alt attribute */}
     </S.NewsCardImage>
     <S.NewsTextContainer>
       <S.NewsCardTitle>{title}</S.NewsCardTitle>
@@ -20,7 +20,7 @@ const NewsCard = ({ image, title, text }) => (
 );
 
 NewsCard.propTypes = {
-  image: PropTypes.string.isRequired, // Updated prop type to string
+  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
